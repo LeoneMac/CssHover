@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+    height: 100px;
+    width: 100px;
+    border: #000000 1px solid;
+    margin-right: 2em;
+    transition: .35s;
+    cursor: pointer;
+}
+
+.items-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.items-container:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+
